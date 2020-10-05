@@ -1,0 +1,980 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MeasurementResultData Date="2019-02-22T18:40:10.7945012Z">
+    <!--Plate-->
+    <Plate>
+        <ID>
+        </ID>
+    </Plate>
+    <!--Header-->
+    <Header Application="Thermo.Automation.Devices.Instruments.Tecan.InfiniteHost, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <Software_Versions>
+            <Version>
+            </Version>
+        </Software_Versions>
+        <Instrument>
+            <Name>infinite M1000 PRO</Name>
+            <SerialNumber>1406001502</SerialNumber>
+        </Instrument>
+        <Hardware_Versions>
+            <Version>MEX, V 1.20 Safire2 MCR  (V 1.20 Safire2 MCR )</Version>
+            <Version>MEM, V 1.20 Safire2 MCR  (V 1.20 Safire2 MCR )</Version>
+            <Version>FPO, V_1.03_Safire2 FP  (V_1.03_Safire2 FP )</Version>
+            <Version>ABS, V 1.00 MCR Abs 4 Channel (V 1.00 MCR Abs 4 Channel)</Version>
+            <Version>LUM, V_1.05_02/2015_LUMINESCENCE (Feb 24 2015/17.31.16)</Version>
+            <Version>INA, V_1.05_11/2011_S3LCE_ALPHA (Nov  3 2011/09.27.24)</Version>
+            <Version>INB, V_1.05_11/2011_S3LCE_ALPHA (Nov  3 2011/09.27.24)</Version>
+            <Version>TCAN, V_1.00_02/2008_S3FTCAN (Feb 21 2008/17.19.16)</Version>
+        </Hardware_Versions>
+        <Parameters>
+            <Parameter Name="System" Value="TECAN-HP8300" />
+            <Parameter Name="User" Value="Tecan-HP8300\Thermo" />
+            <Parameter Name="Plate" Value="4ti 96 Flat Bottom clear UV base  [4ti-0234.pdfx]" />
+        </Parameters>
+    </Header>
+    <!--Script-->
+    <Script>
+        <TecanMeasurement id="1" class="Measurement" xmlns="tecan.at.schema.documents">
+            <MeasurementManualCycle id="2" number="1" type="Standard">
+                <CyclePlate id="3" file="4ti-0234" plateWithCover="False">
+                    <PlateRange id="4" range="A1:H12" auto="false">
+                        <MeasurementFluoInt readingMode="Top" id="5" mode="Normal" type="" name="FluoInt" longname="" description="">
+                            <Well id="6" auto="true">
+                                <MeasurementReading id="7" name="" beamDiameter="0" beamGridType="Single" beamGridSize="0" beamEdgeDistance="">
+                                    <ReadingLabel id="8" name="ex280_scan_top_gain100" scanType="ScanEM" refID="0">
+                                        <ReadingSettings number="50" rate="2500" />
+                                        <ReadingGain type="" gain="100" optimalGainPercentage="0" automaticGain="False" mode="Manual" />
+                                        <ReadingTime integrationTime="20" lagTime="0" readDelay="0" flash="0" dark="0" excitationTime="0" />
+                                        <ReadingFilter id="9" type="Ex" wavelength="2800" bandwidth="100" attenuation="0" usage="FI" />
+                                        <ReadingFilter id="10" type="Em" wavelength="4400~5600:400" bandwidth="200" attenuation="0" usage="FI" />
+                                        <ReadingZPosition mode="Manual" zPosition="20000" />
+                                    </ReadingLabel>
+                                </MeasurementReading>
+                            </Well>
+                        </MeasurementFluoInt>
+                        <MeasurementAbsorbance id="11" mode="Normal" type="" name="ABS" longname="" description="">
+                            <Well id="12" auto="true">
+                                <MeasurementReading id="13" name="" beamDiameter="800" beamGridType="Single" beamGridSize="1" beamEdgeDistance="auto">
+                                    <ReadingLabel id="14" name="abs_280" scanType="ScanFixed" refID="0">
+                                        <ReadingSettings number="25" rate="2500" />
+                                        <ReadingTime integrationTime="0" lagTime="0" readDelay="0" flash="0" dark="0" excitationTime="0" />
+                                        <ReadingFilter id="0" type="Ex" wavelength="2800" bandwidth="25" attenuation="0" usage="ABS" />
+                                    </ReadingLabel>
+                                </MeasurementReading>
+                            </Well>
+                            <CustomData id="15" />
+                        </MeasurementAbsorbance>
+                    </PlateRange>
+                </CyclePlate>
+            </MeasurementManualCycle>
+            <MeasurementInfo id="0" description="">
+                <ScriptTemplateSettings id="0">
+                    <ScriptTemplateGeneralSettings id="0" Title="" Group="" Info="" Image="" />
+                    <ScriptTemplateDescriptionSettings id="0" Internal="" External="" IsExternal="False" />
+                </ScriptTemplateSettings>
+            </MeasurementInfo>
+        </TecanMeasurement>
+    </Script>
+    <!--Actions-->
+    <Actions />
+    <!--Section-->
+    <Section Name="ex280_scan_top_gain100" Time_Start="2019-02-22T18:40:13.3545048Z" Time_End="2019-02-22T18:42:29.989696Z">
+        <Warnings />
+        <Errors />
+        <Parameters>
+            <Parameter Name="Mode" Value="Fluorescence Top Reading" />
+            <Parameter Name="Emission Wavelength Start" Value="440" Unit="nm" />
+            <Parameter Name="Emission Wavelength End" Value="560" Unit="nm" />
+            <Parameter Name="Emission Wavelength Step Size" Value="40" Unit="nm" />
+            <Parameter Name="Emission Scan Number" Value="4" />
+            <Parameter Name="Excitation Wavelength" Value="280" Unit="nm" />
+            <Parameter Name="Bandwidth (Em)" Value="280...850: 20 nm" />
+            <Parameter Name="Bandwidth (Ex) (Range 1)" Value="230...300: 10 nm" />
+            <Parameter Name="Bandwidth (Ex) (Range 2)" Value="301...850: 20 nm" />
+            <Parameter Name="Gain" Value="100" Unit="Manual" />
+            <Parameter Name="Number of Flashes" Value="50" />
+            <Parameter Name="Flash Frequency" Value="400" Unit="Hz" />
+            <Parameter Name="Integration Time" Value="20" Unit="µs" />
+            <Parameter Name="Lag Time" Value="0" Unit="µs" />
+            <Parameter Name="Settle Time" Value="0" Unit="ms" />
+            <Parameter Name="Z-Position (Manual)" Value="20000" Unit="µm" />
+        </Parameters>
+        <Data Cycle="1">
+            <Well Pos="A1" Type="Scan">
+                <Scan WL="440" LabelId="1">15094</Scan>
+                <Scan WL="480" LabelId="1">17381</Scan>
+                <Scan WL="520" LabelId="1">11266</Scan>
+                <Scan WL="560" LabelId="1">5542</Scan>
+            </Well>
+            <Well Pos="A2" Type="Scan">
+                <Scan WL="440" LabelId="1">3295</Scan>
+                <Scan WL="480" LabelId="1">4259</Scan>
+                <Scan WL="520" LabelId="1">3397</Scan>
+                <Scan WL="560" LabelId="1">2050</Scan>
+            </Well>
+            <Well Pos="A3" Type="Scan">
+                <Scan WL="440" LabelId="1">3479</Scan>
+                <Scan WL="480" LabelId="1">4574</Scan>
+                <Scan WL="520" LabelId="1">3700</Scan>
+                <Scan WL="560" LabelId="1">2280</Scan>
+            </Well>
+            <Well Pos="A4" Type="Scan">
+                <Scan WL="440" LabelId="1">3979</Scan>
+                <Scan WL="480" LabelId="1">4889</Scan>
+                <Scan WL="520" LabelId="1">3873</Scan>
+                <Scan WL="560" LabelId="1">2339</Scan>
+            </Well>
+            <Well Pos="A5" Type="Scan">
+                <Scan WL="440" LabelId="1">4445</Scan>
+                <Scan WL="480" LabelId="1">6448</Scan>
+                <Scan WL="520" LabelId="1">5223</Scan>
+                <Scan WL="560" LabelId="1">3055</Scan>
+            </Well>
+            <Well Pos="A6" Type="Scan">
+                <Scan WL="440" LabelId="1">4137</Scan>
+                <Scan WL="480" LabelId="1">5879</Scan>
+                <Scan WL="520" LabelId="1">4667</Scan>
+                <Scan WL="560" LabelId="1">2840</Scan>
+            </Well>
+            <Well Pos="A7" Type="Scan">
+                <Scan WL="440" LabelId="1">4340</Scan>
+                <Scan WL="480" LabelId="1">6060</Scan>
+                <Scan WL="520" LabelId="1">4933</Scan>
+                <Scan WL="560" LabelId="1">2932</Scan>
+            </Well>
+            <Well Pos="A8" Type="Scan">
+                <Scan WL="440" LabelId="1">4956</Scan>
+                <Scan WL="480" LabelId="1">6273</Scan>
+                <Scan WL="520" LabelId="1">4931</Scan>
+                <Scan WL="560" LabelId="1">2902</Scan>
+            </Well>
+            <Well Pos="A9" Type="Scan">
+                <Scan WL="440" LabelId="1">3963</Scan>
+                <Scan WL="480" LabelId="1">5605</Scan>
+                <Scan WL="520" LabelId="1">4534</Scan>
+                <Scan WL="560" LabelId="1">2679</Scan>
+            </Well>
+            <Well Pos="A10" Type="Scan">
+                <Scan WL="440" LabelId="1">4139</Scan>
+                <Scan WL="480" LabelId="1">5451</Scan>
+                <Scan WL="520" LabelId="1">4309</Scan>
+                <Scan WL="560" LabelId="1">2603</Scan>
+            </Well>
+            <Well Pos="A11" Type="Scan">
+                <Scan WL="440" LabelId="1">4054</Scan>
+                <Scan WL="480" LabelId="1">5677</Scan>
+                <Scan WL="520" LabelId="1">4618</Scan>
+                <Scan WL="560" LabelId="1">2806</Scan>
+            </Well>
+            <Well Pos="A12" Type="Scan">
+                <Scan WL="440" LabelId="1">4000</Scan>
+                <Scan WL="480" LabelId="1">5363</Scan>
+                <Scan WL="520" LabelId="1">4391</Scan>
+                <Scan WL="560" LabelId="1">2660</Scan>
+            </Well>
+            <Well Pos="B12" Type="Scan">
+                <Scan WL="440" LabelId="1">4154</Scan>
+                <Scan WL="480" LabelId="1">5767</Scan>
+                <Scan WL="520" LabelId="1">4717</Scan>
+                <Scan WL="560" LabelId="1">2772</Scan>
+            </Well>
+            <Well Pos="B11" Type="Scan">
+                <Scan WL="440" LabelId="1">4342</Scan>
+                <Scan WL="480" LabelId="1">6172</Scan>
+                <Scan WL="520" LabelId="1">4996</Scan>
+                <Scan WL="560" LabelId="1">3055</Scan>
+            </Well>
+            <Well Pos="B10" Type="Scan">
+                <Scan WL="440" LabelId="1">4301</Scan>
+                <Scan WL="480" LabelId="1">6112</Scan>
+                <Scan WL="520" LabelId="1">5045</Scan>
+                <Scan WL="560" LabelId="1">3004</Scan>
+            </Well>
+            <Well Pos="B9" Type="Scan">
+                <Scan WL="440" LabelId="1">4302</Scan>
+                <Scan WL="480" LabelId="1">6061</Scan>
+                <Scan WL="520" LabelId="1">5014</Scan>
+                <Scan WL="560" LabelId="1">3002</Scan>
+            </Well>
+            <Well Pos="B8" Type="Scan">
+                <Scan WL="440" LabelId="1">4519</Scan>
+                <Scan WL="480" LabelId="1">6280</Scan>
+                <Scan WL="520" LabelId="1">5087</Scan>
+                <Scan WL="560" LabelId="1">3029</Scan>
+            </Well>
+            <Well Pos="B7" Type="Scan">
+                <Scan WL="440" LabelId="1">4379</Scan>
+                <Scan WL="480" LabelId="1">6166</Scan>
+                <Scan WL="520" LabelId="1">5073</Scan>
+                <Scan WL="560" LabelId="1">3037</Scan>
+            </Well>
+            <Well Pos="B6" Type="Scan">
+                <Scan WL="440" LabelId="1">4817</Scan>
+                <Scan WL="480" LabelId="1">6452</Scan>
+                <Scan WL="520" LabelId="1">5186</Scan>
+                <Scan WL="560" LabelId="1">3065</Scan>
+            </Well>
+            <Well Pos="B5" Type="Scan">
+                <Scan WL="440" LabelId="1">4656</Scan>
+                <Scan WL="480" LabelId="1">6347</Scan>
+                <Scan WL="520" LabelId="1">5150</Scan>
+                <Scan WL="560" LabelId="1">3023</Scan>
+            </Well>
+            <Well Pos="B4" Type="Scan">
+                <Scan WL="440" LabelId="1">4363</Scan>
+                <Scan WL="480" LabelId="1">6108</Scan>
+                <Scan WL="520" LabelId="1">5057</Scan>
+                <Scan WL="560" LabelId="1">2998</Scan>
+            </Well>
+            <Well Pos="B3" Type="Scan">
+                <Scan WL="440" LabelId="1">4962</Scan>
+                <Scan WL="480" LabelId="1">6298</Scan>
+                <Scan WL="520" LabelId="1">5054</Scan>
+                <Scan WL="560" LabelId="1">3019</Scan>
+            </Well>
+            <Well Pos="B2" Type="Scan">
+                <Scan WL="440" LabelId="1">4464</Scan>
+                <Scan WL="480" LabelId="1">6316</Scan>
+                <Scan WL="520" LabelId="1">5256</Scan>
+                <Scan WL="560" LabelId="1">3138</Scan>
+            </Well>
+            <Well Pos="B1" Type="Scan">
+                <Scan WL="440" LabelId="1">3755</Scan>
+                <Scan WL="480" LabelId="1">5002</Scan>
+                <Scan WL="520" LabelId="1">4109</Scan>
+                <Scan WL="560" LabelId="1">2498</Scan>
+            </Well>
+            <Well Pos="C1" Type="Scan">
+                <Scan WL="440" LabelId="1">18235</Scan>
+                <Scan WL="480" LabelId="1">24126</Scan>
+                <Scan WL="520" LabelId="1">17044</Scan>
+                <Scan WL="560" LabelId="1">9141</Scan>
+            </Well>
+            <Well Pos="C2" Type="Scan">
+                <Scan WL="440" LabelId="1">4718</Scan>
+                <Scan WL="480" LabelId="1">6231</Scan>
+                <Scan WL="520" LabelId="1">4852</Scan>
+                <Scan WL="560" LabelId="1">2834</Scan>
+            </Well>
+            <Well Pos="C3" Type="Scan">
+                <Scan WL="440" LabelId="1">4888</Scan>
+                <Scan WL="480" LabelId="1">6449</Scan>
+                <Scan WL="520" LabelId="1">4995</Scan>
+                <Scan WL="560" LabelId="1">2904</Scan>
+            </Well>
+            <Well Pos="C4" Type="Scan">
+                <Scan WL="440" LabelId="1">4596</Scan>
+                <Scan WL="480" LabelId="1">5797</Scan>
+                <Scan WL="520" LabelId="1">4435</Scan>
+                <Scan WL="560" LabelId="1">2634</Scan>
+            </Well>
+            <Well Pos="C5" Type="Scan">
+                <Scan WL="440" LabelId="1">5175</Scan>
+                <Scan WL="480" LabelId="1">7408</Scan>
+                <Scan WL="520" LabelId="1">6143</Scan>
+                <Scan WL="560" LabelId="1">3629</Scan>
+            </Well>
+            <Well Pos="C6" Type="Scan">
+                <Scan WL="440" LabelId="1">5049</Scan>
+                <Scan WL="480" LabelId="1">7498</Scan>
+                <Scan WL="520" LabelId="1">6199</Scan>
+                <Scan WL="560" LabelId="1">3657</Scan>
+            </Well>
+            <Well Pos="C7" Type="Scan">
+                <Scan WL="440" LabelId="1">4832</Scan>
+                <Scan WL="480" LabelId="1">7118</Scan>
+                <Scan WL="520" LabelId="1">5882</Scan>
+                <Scan WL="560" LabelId="1">3520</Scan>
+            </Well>
+            <Well Pos="C8" Type="Scan">
+                <Scan WL="440" LabelId="1">4909</Scan>
+                <Scan WL="480" LabelId="1">6763</Scan>
+                <Scan WL="520" LabelId="1">5310</Scan>
+                <Scan WL="560" LabelId="1">3138</Scan>
+            </Well>
+            <Well Pos="C9" Type="Scan">
+                <Scan WL="440" LabelId="1">5091</Scan>
+                <Scan WL="480" LabelId="1">6779</Scan>
+                <Scan WL="520" LabelId="1">5398</Scan>
+                <Scan WL="560" LabelId="1">3159</Scan>
+            </Well>
+            <Well Pos="C10" Type="Scan">
+                <Scan WL="440" LabelId="1">4950</Scan>
+                <Scan WL="480" LabelId="1">6634</Scan>
+                <Scan WL="520" LabelId="1">5241</Scan>
+                <Scan WL="560" LabelId="1">3148</Scan>
+            </Well>
+            <Well Pos="C11" Type="Scan">
+                <Scan WL="440" LabelId="1">4760</Scan>
+                <Scan WL="480" LabelId="1">6335</Scan>
+                <Scan WL="520" LabelId="1">5060</Scan>
+                <Scan WL="560" LabelId="1">3039</Scan>
+            </Well>
+            <Well Pos="C12" Type="Scan">
+                <Scan WL="440" LabelId="1">4618</Scan>
+                <Scan WL="480" LabelId="1">5777</Scan>
+                <Scan WL="520" LabelId="1">4577</Scan>
+                <Scan WL="560" LabelId="1">2729</Scan>
+            </Well>
+            <Well Pos="D12" Type="Scan">
+                <Scan WL="440" LabelId="1">4031</Scan>
+                <Scan WL="480" LabelId="1">5252</Scan>
+                <Scan WL="520" LabelId="1">4218</Scan>
+                <Scan WL="560" LabelId="1">2595</Scan>
+            </Well>
+            <Well Pos="D11" Type="Scan">
+                <Scan WL="440" LabelId="1">5044</Scan>
+                <Scan WL="480" LabelId="1">6495</Scan>
+                <Scan WL="520" LabelId="1">5186</Scan>
+                <Scan WL="560" LabelId="1">3129</Scan>
+            </Well>
+            <Well Pos="D10" Type="Scan">
+                <Scan WL="440" LabelId="1">4945</Scan>
+                <Scan WL="480" LabelId="1">6260</Scan>
+                <Scan WL="520" LabelId="1">4955</Scan>
+                <Scan WL="560" LabelId="1">3029</Scan>
+            </Well>
+            <Well Pos="D9" Type="Scan">
+                <Scan WL="440" LabelId="1">4489</Scan>
+                <Scan WL="480" LabelId="1">5946</Scan>
+                <Scan WL="520" LabelId="1">4788</Scan>
+                <Scan WL="560" LabelId="1">2892</Scan>
+            </Well>
+            <Well Pos="D8" Type="Scan">
+                <Scan WL="440" LabelId="1">4520</Scan>
+                <Scan WL="480" LabelId="1">6107</Scan>
+                <Scan WL="520" LabelId="1">4958</Scan>
+                <Scan WL="560" LabelId="1">2968</Scan>
+            </Well>
+            <Well Pos="D7" Type="Scan">
+                <Scan WL="440" LabelId="1">4464</Scan>
+                <Scan WL="480" LabelId="1">6185</Scan>
+                <Scan WL="520" LabelId="1">4967</Scan>
+                <Scan WL="560" LabelId="1">3024</Scan>
+            </Well>
+            <Well Pos="D6" Type="Scan">
+                <Scan WL="440" LabelId="1">4450</Scan>
+                <Scan WL="480" LabelId="1">5948</Scan>
+                <Scan WL="520" LabelId="1">4816</Scan>
+                <Scan WL="560" LabelId="1">2957</Scan>
+            </Well>
+            <Well Pos="D5" Type="Scan">
+                <Scan WL="440" LabelId="1">4252</Scan>
+                <Scan WL="480" LabelId="1">5977</Scan>
+                <Scan WL="520" LabelId="1">4771</Scan>
+                <Scan WL="560" LabelId="1">2909</Scan>
+            </Well>
+            <Well Pos="D4" Type="Scan">
+                <Scan WL="440" LabelId="1">4932</Scan>
+                <Scan WL="480" LabelId="1">6387</Scan>
+                <Scan WL="520" LabelId="1">4956</Scan>
+                <Scan WL="560" LabelId="1">2996</Scan>
+            </Well>
+            <Well Pos="D3" Type="Scan">
+                <Scan WL="440" LabelId="1">4265</Scan>
+                <Scan WL="480" LabelId="1">5821</Scan>
+                <Scan WL="520" LabelId="1">4794</Scan>
+                <Scan WL="560" LabelId="1">2872</Scan>
+            </Well>
+            <Well Pos="D2" Type="Scan">
+                <Scan WL="440" LabelId="1">4570</Scan>
+                <Scan WL="480" LabelId="1">6274</Scan>
+                <Scan WL="520" LabelId="1">4953</Scan>
+                <Scan WL="560" LabelId="1">3045</Scan>
+            </Well>
+            <Well Pos="D1" Type="Scan">
+                <Scan WL="440" LabelId="1">3843</Scan>
+                <Scan WL="480" LabelId="1">5140</Scan>
+                <Scan WL="520" LabelId="1">4153</Scan>
+                <Scan WL="560" LabelId="1">2524</Scan>
+            </Well>
+            <Well Pos="E1" Type="Scan">
+                <Scan WL="440" LabelId="1">15270</Scan>
+                <Scan WL="480" LabelId="1">10294</Scan>
+                <Scan WL="520" LabelId="1">6402</Scan>
+                <Scan WL="560" LabelId="1">3327</Scan>
+            </Well>
+            <Well Pos="E2" Type="Scan">
+                <Scan WL="440" LabelId="1">15868</Scan>
+                <Scan WL="480" LabelId="1">6184</Scan>
+                <Scan WL="520" LabelId="1">2981</Scan>
+                <Scan WL="560" LabelId="1">1593</Scan>
+            </Well>
+            <Well Pos="E3" Type="Scan">
+                <Scan WL="440" LabelId="1">19724</Scan>
+                <Scan WL="480" LabelId="1">7595</Scan>
+                <Scan WL="520" LabelId="1">3687</Scan>
+                <Scan WL="560" LabelId="1">1868</Scan>
+            </Well>
+            <Well Pos="E4" Type="Scan">
+                <Scan WL="440" LabelId="1">17018</Scan>
+                <Scan WL="480" LabelId="1">6688</Scan>
+                <Scan WL="520" LabelId="1">3232</Scan>
+                <Scan WL="560" LabelId="1">1715</Scan>
+            </Well>
+            <Well Pos="E5" Type="Scan">
+                <Scan WL="440" LabelId="1">24567</Scan>
+                <Scan WL="480" LabelId="1">9734</Scan>
+                <Scan WL="520" LabelId="1">4415</Scan>
+                <Scan WL="560" LabelId="1">2150</Scan>
+            </Well>
+            <Well Pos="E6" Type="Scan">
+                <Scan WL="440" LabelId="1">26684</Scan>
+                <Scan WL="480" LabelId="1">10199</Scan>
+                <Scan WL="520" LabelId="1">4692</Scan>
+                <Scan WL="560" LabelId="1">2259</Scan>
+            </Well>
+            <Well Pos="E7" Type="Scan">
+                <Scan WL="440" LabelId="1">28485</Scan>
+                <Scan WL="480" LabelId="1">10698</Scan>
+                <Scan WL="520" LabelId="1">4939</Scan>
+                <Scan WL="560" LabelId="1">2382</Scan>
+            </Well>
+            <Well Pos="E8" Type="Scan">
+                <Scan WL="440" LabelId="1">27290</Scan>
+                <Scan WL="480" LabelId="1">9415</Scan>
+                <Scan WL="520" LabelId="1">4405</Scan>
+                <Scan WL="560" LabelId="1">2202</Scan>
+            </Well>
+            <Well Pos="E9" Type="Scan">
+                <Scan WL="440" LabelId="1">25355</Scan>
+                <Scan WL="480" LabelId="1">8773</Scan>
+                <Scan WL="520" LabelId="1">4071</Scan>
+                <Scan WL="560" LabelId="1">2012</Scan>
+            </Well>
+            <Well Pos="E10" Type="Scan">
+                <Scan WL="440" LabelId="1">20029</Scan>
+                <Scan WL="480" LabelId="1">6757</Scan>
+                <Scan WL="520" LabelId="1">3042</Scan>
+                <Scan WL="560" LabelId="1">1503</Scan>
+            </Well>
+            <Well Pos="E11" Type="Scan">
+                <Scan WL="440" LabelId="1">23798</Scan>
+                <Scan WL="480" LabelId="1">7298</Scan>
+                <Scan WL="520" LabelId="1">3116</Scan>
+                <Scan WL="560" LabelId="1">1491</Scan>
+            </Well>
+            <Well Pos="E12" Type="Scan">
+                <Scan WL="440" LabelId="1">22553</Scan>
+                <Scan WL="480" LabelId="1">7261</Scan>
+                <Scan WL="520" LabelId="1">3112</Scan>
+                <Scan WL="560" LabelId="1">1568</Scan>
+            </Well>
+            <Well Pos="F12" Type="Scan">
+                <Scan WL="440" LabelId="1">23698</Scan>
+                <Scan WL="480" LabelId="1">7583</Scan>
+                <Scan WL="520" LabelId="1">3300</Scan>
+                <Scan WL="560" LabelId="1">1609</Scan>
+            </Well>
+            <Well Pos="F11" Type="Scan">
+                <Scan WL="440" LabelId="1">26260</Scan>
+                <Scan WL="480" LabelId="1">8331</Scan>
+                <Scan WL="520" LabelId="1">3354</Scan>
+                <Scan WL="560" LabelId="1">1568</Scan>
+            </Well>
+            <Well Pos="F10" Type="Scan">
+                <Scan WL="440" LabelId="1">26374</Scan>
+                <Scan WL="480" LabelId="1">8335</Scan>
+                <Scan WL="520" LabelId="1">3390</Scan>
+                <Scan WL="560" LabelId="1">1566</Scan>
+            </Well>
+            <Well Pos="F9" Type="Scan">
+                <Scan WL="440" LabelId="1">24735</Scan>
+                <Scan WL="480" LabelId="1">7909</Scan>
+                <Scan WL="520" LabelId="1">3129</Scan>
+                <Scan WL="560" LabelId="1">1471</Scan>
+            </Well>
+            <Well Pos="F8" Type="Scan">
+                <Scan WL="440" LabelId="1">22742</Scan>
+                <Scan WL="480" LabelId="1">7164</Scan>
+                <Scan WL="520" LabelId="1">2928</Scan>
+                <Scan WL="560" LabelId="1">1403</Scan>
+            </Well>
+            <Well Pos="F7" Type="Scan">
+                <Scan WL="440" LabelId="1">21844</Scan>
+                <Scan WL="480" LabelId="1">6773</Scan>
+                <Scan WL="520" LabelId="1">2863</Scan>
+                <Scan WL="560" LabelId="1">1405</Scan>
+            </Well>
+            <Well Pos="F6" Type="Scan">
+                <Scan WL="440" LabelId="1">21759</Scan>
+                <Scan WL="480" LabelId="1">6780</Scan>
+                <Scan WL="520" LabelId="1">2914</Scan>
+                <Scan WL="560" LabelId="1">1424</Scan>
+            </Well>
+            <Well Pos="F5" Type="Scan">
+                <Scan WL="440" LabelId="1">21723</Scan>
+                <Scan WL="480" LabelId="1">6676</Scan>
+                <Scan WL="520" LabelId="1">2894</Scan>
+                <Scan WL="560" LabelId="1">1419</Scan>
+            </Well>
+            <Well Pos="F4" Type="Scan">
+                <Scan WL="440" LabelId="1">22161</Scan>
+                <Scan WL="480" LabelId="1">6833</Scan>
+                <Scan WL="520" LabelId="1">2900</Scan>
+                <Scan WL="560" LabelId="1">1430</Scan>
+            </Well>
+            <Well Pos="F3" Type="Scan">
+                <Scan WL="440" LabelId="1">22256</Scan>
+                <Scan WL="480" LabelId="1">7050</Scan>
+                <Scan WL="520" LabelId="1">2961</Scan>
+                <Scan WL="560" LabelId="1">1475</Scan>
+            </Well>
+            <Well Pos="F2" Type="Scan">
+                <Scan WL="440" LabelId="1">22764</Scan>
+                <Scan WL="480" LabelId="1">7171</Scan>
+                <Scan WL="520" LabelId="1">3030</Scan>
+                <Scan WL="560" LabelId="1">1490</Scan>
+            </Well>
+            <Well Pos="F1" Type="Scan">
+                <Scan WL="440" LabelId="1">22016</Scan>
+                <Scan WL="480" LabelId="1">7098</Scan>
+                <Scan WL="520" LabelId="1">3154</Scan>
+                <Scan WL="560" LabelId="1">1571</Scan>
+            </Well>
+            <Well Pos="G1" Type="Scan">
+                <Scan WL="440" LabelId="1">7250</Scan>
+                <Scan WL="480" LabelId="1">6452</Scan>
+                <Scan WL="520" LabelId="1">4035</Scan>
+                <Scan WL="560" LabelId="1">2102</Scan>
+            </Well>
+            <Well Pos="G2" Type="Scan">
+                <Scan WL="440" LabelId="1">4969</Scan>
+                <Scan WL="480" LabelId="1">3514</Scan>
+                <Scan WL="520" LabelId="1">1995</Scan>
+                <Scan WL="560" LabelId="1">1111</Scan>
+            </Well>
+            <Well Pos="G3" Type="Scan">
+                <Scan WL="440" LabelId="1">5266</Scan>
+                <Scan WL="480" LabelId="1">3724</Scan>
+                <Scan WL="520" LabelId="1">2074</Scan>
+                <Scan WL="560" LabelId="1">1151</Scan>
+            </Well>
+            <Well Pos="G4" Type="Scan">
+                <Scan WL="440" LabelId="1">5457</Scan>
+                <Scan WL="480" LabelId="1">3882</Scan>
+                <Scan WL="520" LabelId="1">2233</Scan>
+                <Scan WL="560" LabelId="1">1203</Scan>
+            </Well>
+            <Well Pos="G5" Type="Scan">
+                <Scan WL="440" LabelId="1">6420</Scan>
+                <Scan WL="480" LabelId="1">4522</Scan>
+                <Scan WL="520" LabelId="1">2497</Scan>
+                <Scan WL="560" LabelId="1">1326</Scan>
+            </Well>
+            <Well Pos="G6" Type="Scan">
+                <Scan WL="440" LabelId="1">7575</Scan>
+                <Scan WL="480" LabelId="1">4868</Scan>
+                <Scan WL="520" LabelId="1">2575</Scan>
+                <Scan WL="560" LabelId="1">1340</Scan>
+            </Well>
+            <Well Pos="G7" Type="Scan">
+                <Scan WL="440" LabelId="1">10644</Scan>
+                <Scan WL="480" LabelId="1">5907</Scan>
+                <Scan WL="520" LabelId="1">2825</Scan>
+                <Scan WL="560" LabelId="1">1390</Scan>
+            </Well>
+            <Well Pos="G8" Type="Scan">
+                <Scan WL="440" LabelId="1">8663</Scan>
+                <Scan WL="480" LabelId="1">4966</Scan>
+                <Scan WL="520" LabelId="1">2442</Scan>
+                <Scan WL="560" LabelId="1">1293</Scan>
+            </Well>
+            <Well Pos="G9" Type="Scan">
+                <Scan WL="440" LabelId="1">3819</Scan>
+                <Scan WL="480" LabelId="1">3112</Scan>
+                <Scan WL="520" LabelId="1">1988</Scan>
+                <Scan WL="560" LabelId="1">1173</Scan>
+            </Well>
+            <Well Pos="G10" Type="Scan">
+                <Scan WL="440" LabelId="1">4324</Scan>
+                <Scan WL="480" LabelId="1">3154</Scan>
+                <Scan WL="520" LabelId="1">1941</Scan>
+                <Scan WL="560" LabelId="1">1127</Scan>
+            </Well>
+            <Well Pos="G11" Type="Scan">
+                <Scan WL="440" LabelId="1">4475</Scan>
+                <Scan WL="480" LabelId="1">3030</Scan>
+                <Scan WL="520" LabelId="1">1765</Scan>
+                <Scan WL="560" LabelId="1">1025</Scan>
+            </Well>
+            <Well Pos="G12" Type="Scan">
+                <Scan WL="440" LabelId="1">3187</Scan>
+                <Scan WL="480" LabelId="1">2323</Scan>
+                <Scan WL="520" LabelId="1">1491</Scan>
+                <Scan WL="560" LabelId="1">922</Scan>
+            </Well>
+            <Well Pos="H12" Type="Scan">
+                <Scan WL="440" LabelId="1">2684</Scan>
+                <Scan WL="480" LabelId="1">2077</Scan>
+                <Scan WL="520" LabelId="1">1374</Scan>
+                <Scan WL="560" LabelId="1">855</Scan>
+            </Well>
+            <Well Pos="H11" Type="Scan">
+                <Scan WL="440" LabelId="1">2654</Scan>
+                <Scan WL="480" LabelId="1">2192</Scan>
+                <Scan WL="520" LabelId="1">1485</Scan>
+                <Scan WL="560" LabelId="1">941</Scan>
+            </Well>
+            <Well Pos="H10" Type="Scan">
+                <Scan WL="440" LabelId="1">2855</Scan>
+                <Scan WL="480" LabelId="1">2297</Scan>
+                <Scan WL="520" LabelId="1">1542</Scan>
+                <Scan WL="560" LabelId="1">950</Scan>
+            </Well>
+            <Well Pos="H9" Type="Scan">
+                <Scan WL="440" LabelId="1">2856</Scan>
+                <Scan WL="480" LabelId="1">2368</Scan>
+                <Scan WL="520" LabelId="1">1593</Scan>
+                <Scan WL="560" LabelId="1">988</Scan>
+            </Well>
+            <Well Pos="H8" Type="Scan">
+                <Scan WL="440" LabelId="1">2830</Scan>
+                <Scan WL="480" LabelId="1">2328</Scan>
+                <Scan WL="520" LabelId="1">1578</Scan>
+                <Scan WL="560" LabelId="1">966</Scan>
+            </Well>
+            <Well Pos="H7" Type="Scan">
+                <Scan WL="440" LabelId="1">2753</Scan>
+                <Scan WL="480" LabelId="1">2371</Scan>
+                <Scan WL="520" LabelId="1">1634</Scan>
+                <Scan WL="560" LabelId="1">997</Scan>
+            </Well>
+            <Well Pos="H6" Type="Scan">
+                <Scan WL="440" LabelId="1">2674</Scan>
+                <Scan WL="480" LabelId="1">2327</Scan>
+                <Scan WL="520" LabelId="1">1608</Scan>
+                <Scan WL="560" LabelId="1">983</Scan>
+            </Well>
+            <Well Pos="H5" Type="Scan">
+                <Scan WL="440" LabelId="1">2755</Scan>
+                <Scan WL="480" LabelId="1">2347</Scan>
+                <Scan WL="520" LabelId="1">1609</Scan>
+                <Scan WL="560" LabelId="1">981</Scan>
+            </Well>
+            <Well Pos="H4" Type="Scan">
+                <Scan WL="440" LabelId="1">3044</Scan>
+                <Scan WL="480" LabelId="1">2485</Scan>
+                <Scan WL="520" LabelId="1">1655</Scan>
+                <Scan WL="560" LabelId="1">1007</Scan>
+            </Well>
+            <Well Pos="H3" Type="Scan">
+                <Scan WL="440" LabelId="1">2757</Scan>
+                <Scan WL="480" LabelId="1">2327</Scan>
+                <Scan WL="520" LabelId="1">1586</Scan>
+                <Scan WL="560" LabelId="1">966</Scan>
+            </Well>
+            <Well Pos="H2" Type="Scan">
+                <Scan WL="440" LabelId="1">2612</Scan>
+                <Scan WL="480" LabelId="1">2222</Scan>
+                <Scan WL="520" LabelId="1">1520</Scan>
+                <Scan WL="560" LabelId="1">938</Scan>
+            </Well>
+            <Well Pos="H1" Type="Scan">
+                <Scan WL="440" LabelId="1">5260</Scan>
+                <Scan WL="480" LabelId="1">3887</Scan>
+                <Scan WL="520" LabelId="1">2280</Scan>
+                <Scan WL="560" LabelId="1">1176</Scan>
+            </Well>
+        </Data>
+    </Section>
+    <!--Section-->
+    <Section Name="abs_280" Time_Start="2019-02-22T18:42:29.989696Z" Time_End="2019-02-22T18:42:47.1547201Z">
+        <Warnings />
+        <Parameters>
+            <Parameter Name="Mode" Value="Absorbance" />
+            <Parameter Name="Wavelength" Value="280" Unit="nm" />
+            <Parameter Name="Number of Flashes" Value="25" />
+            <Parameter Name="Settle Time" Value="0" Unit="ms" />
+        </Parameters>
+        <Data Cycle="1">
+            <Well Pos="A1" Type="Single">
+                <Single LabelId="1" Status="Measured">0.1207</Single>
+            </Well>
+            <Well Pos="B1" Type="Single">
+                <Single LabelId="1" Status="Measured">0.1941</Single>
+            </Well>
+            <Well Pos="C1" Type="Single">
+                <Single LabelId="1" Status="Measured">0.1307</Single>
+            </Well>
+            <Well Pos="D1" Type="Single">
+                <Single LabelId="1" Status="Measured">0.21</Single>
+            </Well>
+            <Well Pos="A2" Type="Single">
+                <Single LabelId="1" Status="Measured">0.1636</Single>
+            </Well>
+            <Well Pos="B2" Type="Single">
+                <Single LabelId="1" Status="Measured">0.1988</Single>
+            </Well>
+            <Well Pos="C2" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2649</Single>
+            </Well>
+            <Well Pos="D2" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2221</Single>
+            </Well>
+            <Well Pos="A3" Type="Single">
+                <Single LabelId="1" Status="Measured">0.1664</Single>
+            </Well>
+            <Well Pos="B3" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2058</Single>
+            </Well>
+            <Well Pos="C3" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2547</Single>
+            </Well>
+            <Well Pos="D3" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2215</Single>
+            </Well>
+            <Well Pos="A4" Type="Single">
+                <Single LabelId="1" Status="Measured">0.1651</Single>
+            </Well>
+            <Well Pos="B4" Type="Single">
+                <Single LabelId="1" Status="Measured">0.1994</Single>
+            </Well>
+            <Well Pos="C4" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2535</Single>
+            </Well>
+            <Well Pos="D4" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2173</Single>
+            </Well>
+            <Well Pos="A5" Type="Single">
+                <Single LabelId="1" Status="Measured">0.167</Single>
+            </Well>
+            <Well Pos="B5" Type="Single">
+                <Single LabelId="1" Status="Measured">0.203</Single>
+            </Well>
+            <Well Pos="C5" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2756</Single>
+            </Well>
+            <Well Pos="D5" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2246</Single>
+            </Well>
+            <Well Pos="A6" Type="Single">
+                <Single LabelId="1" Status="Measured">0.171</Single>
+            </Well>
+            <Well Pos="B6" Type="Single">
+                <Single LabelId="1" Status="Measured">0.1987</Single>
+            </Well>
+            <Well Pos="C6" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2681</Single>
+            </Well>
+            <Well Pos="D6" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2316</Single>
+            </Well>
+            <Well Pos="A7" Type="Single">
+                <Single LabelId="1" Status="Measured">0.1728</Single>
+            </Well>
+            <Well Pos="B7" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2171</Single>
+            </Well>
+            <Well Pos="C7" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2693</Single>
+            </Well>
+            <Well Pos="D7" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2385</Single>
+            </Well>
+            <Well Pos="A8" Type="Single">
+                <Single LabelId="1" Status="Measured">0.1822</Single>
+            </Well>
+            <Well Pos="B8" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2236</Single>
+            </Well>
+            <Well Pos="C8" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2839</Single>
+            </Well>
+            <Well Pos="D8" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2303</Single>
+            </Well>
+            <Well Pos="A9" Type="Single">
+                <Single LabelId="1" Status="Measured">0.1737</Single>
+            </Well>
+            <Well Pos="B9" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2134</Single>
+            </Well>
+            <Well Pos="C9" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2708</Single>
+            </Well>
+            <Well Pos="D9" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2253</Single>
+            </Well>
+            <Well Pos="A10" Type="Single">
+                <Single LabelId="1" Status="Measured">0.18</Single>
+            </Well>
+            <Well Pos="B10" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2159</Single>
+            </Well>
+            <Well Pos="C10" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2777</Single>
+            </Well>
+            <Well Pos="D10" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2394</Single>
+            </Well>
+            <Well Pos="A11" Type="Single">
+                <Single LabelId="1" Status="Measured">0.1615</Single>
+            </Well>
+            <Well Pos="B11" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2091</Single>
+            </Well>
+            <Well Pos="C11" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2746</Single>
+            </Well>
+            <Well Pos="D11" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2283</Single>
+            </Well>
+            <Well Pos="A12" Type="Single">
+                <Single LabelId="1" Status="Measured">0.1601</Single>
+            </Well>
+            <Well Pos="B12" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2211</Single>
+            </Well>
+            <Well Pos="C12" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2957</Single>
+            </Well>
+            <Well Pos="D12" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2498</Single>
+            </Well>
+            <Well Pos="E12" Type="Single">
+                <Single LabelId="1" Status="Measured">0.1061</Single>
+            </Well>
+            <Well Pos="F12" Type="Single">
+                <Single LabelId="1" Status="Measured">0.1696</Single>
+            </Well>
+            <Well Pos="G12" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2644</Single>
+            </Well>
+            <Well Pos="H12" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2063</Single>
+            </Well>
+            <Well Pos="E11" Type="Single">
+                <Single LabelId="1" Status="Measured">0.1142</Single>
+            </Well>
+            <Well Pos="F11" Type="Single">
+                <Single LabelId="1" Status="Measured">0.1784</Single>
+            </Well>
+            <Well Pos="G11" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2697</Single>
+            </Well>
+            <Well Pos="H11" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2216</Single>
+            </Well>
+            <Well Pos="E10" Type="Single">
+                <Single LabelId="1" Status="Measured">0.1242</Single>
+            </Well>
+            <Well Pos="F10" Type="Single">
+                <Single LabelId="1" Status="Measured">0.1792</Single>
+            </Well>
+            <Well Pos="G10" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2899</Single>
+            </Well>
+            <Well Pos="H10" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2233</Single>
+            </Well>
+            <Well Pos="E9" Type="Single">
+                <Single LabelId="1" Status="Measured">0.123</Single>
+            </Well>
+            <Well Pos="F9" Type="Single">
+                <Single LabelId="1" Status="Measured">0.1806</Single>
+            </Well>
+            <Well Pos="G9" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2576</Single>
+            </Well>
+            <Well Pos="H9" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2205</Single>
+            </Well>
+            <Well Pos="E8" Type="Single">
+                <Single LabelId="1" Status="Measured">0.1224</Single>
+            </Well>
+            <Well Pos="F8" Type="Single">
+                <Single LabelId="1" Status="Measured">0.1743</Single>
+            </Well>
+            <Well Pos="G8" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2499</Single>
+            </Well>
+            <Well Pos="H8" Type="Single">
+                <Single LabelId="1" Status="Measured">0.22</Single>
+            </Well>
+            <Well Pos="E7" Type="Single">
+                <Single LabelId="1" Status="Measured">0.1189</Single>
+            </Well>
+            <Well Pos="F7" Type="Single">
+                <Single LabelId="1" Status="Measured">0.1772</Single>
+            </Well>
+            <Well Pos="G7" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2454</Single>
+            </Well>
+            <Well Pos="H7" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2175</Single>
+            </Well>
+            <Well Pos="E6" Type="Single">
+                <Single LabelId="1" Status="Measured">0.1121</Single>
+            </Well>
+            <Well Pos="F6" Type="Single">
+                <Single LabelId="1" Status="Measured">0.1588</Single>
+            </Well>
+            <Well Pos="G6" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2396</Single>
+            </Well>
+            <Well Pos="H6" Type="Single">
+                <Single LabelId="1" Status="Measured">0.1963</Single>
+            </Well>
+            <Well Pos="E5" Type="Single">
+                <Single LabelId="1" Status="Measured">0.1073</Single>
+            </Well>
+            <Well Pos="F5" Type="Single">
+                <Single LabelId="1" Status="Measured">0.1599</Single>
+            </Well>
+            <Well Pos="G5" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2418</Single>
+            </Well>
+            <Well Pos="H5" Type="Single">
+                <Single LabelId="1" Status="Measured">0.1943</Single>
+            </Well>
+            <Well Pos="E4" Type="Single">
+                <Single LabelId="1" Status="Measured">0.108</Single>
+            </Well>
+            <Well Pos="F4" Type="Single">
+                <Single LabelId="1" Status="Measured">0.1585</Single>
+            </Well>
+            <Well Pos="G4" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2441</Single>
+            </Well>
+            <Well Pos="H4" Type="Single">
+                <Single LabelId="1" Status="Measured">0.1904</Single>
+            </Well>
+            <Well Pos="E3" Type="Single">
+                <Single LabelId="1" Status="Measured">0.1094</Single>
+            </Well>
+            <Well Pos="F3" Type="Single">
+                <Single LabelId="1" Status="Measured">0.161</Single>
+            </Well>
+            <Well Pos="G3" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2335</Single>
+            </Well>
+            <Well Pos="H3" Type="Single">
+                <Single LabelId="1" Status="Measured">0.1945</Single>
+            </Well>
+            <Well Pos="E2" Type="Single">
+                <Single LabelId="1" Status="Measured">0.1009</Single>
+            </Well>
+            <Well Pos="F2" Type="Single">
+                <Single LabelId="1" Status="Measured">0.1625</Single>
+            </Well>
+            <Well Pos="G2" Type="Single">
+                <Single LabelId="1" Status="Measured">0.2071</Single>
+            </Well>
+            <Well Pos="H2" Type="Single">
+                <Single LabelId="1" Status="Measured">0.1919</Single>
+            </Well>
+            <Well Pos="E1" Type="Single">
+                <Single LabelId="1" Status="Measured">0.0735</Single>
+            </Well>
+            <Well Pos="F1" Type="Single">
+                <Single LabelId="1" Status="Measured">0.1749</Single>
+            </Well>
+            <Well Pos="G1" Type="Single">
+                <Single LabelId="1" Status="Measured">0.0986</Single>
+            </Well>
+            <Well Pos="H1" Type="Single">
+                <Single LabelId="1" Status="Measured">0.0586</Single>
+            </Well>
+        </Data>
+    </Section>
+</MeasurementResultData>

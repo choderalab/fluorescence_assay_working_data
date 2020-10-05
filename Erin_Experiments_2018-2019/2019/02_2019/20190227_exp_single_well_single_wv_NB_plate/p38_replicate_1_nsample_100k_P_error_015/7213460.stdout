@@ -1,0 +1,105 @@
+Sender: LSF System <lsfadmin@lt19>
+Subject: Job 7213460: <p38_100k_dP> in cluster <lila> Done
+
+Job <p38_100k_dP> was submitted from host <lilac> by user <grundye> in cluster <lila> at Fri Mar  1 13:33:24 2019
+Job was executed on host(s) <lt19>, in queue <cpuqueue>, as user <grundye> in cluster <lila> at Fri Mar  1 13:33:25 2019
+</home/grundye> was used as the home directory.
+</home/grundye/EXPERIMENTS/kinase_inhibitors_and_assaytools/20190227_single_well_dial_prot_NB_plate/p38_replicate_1_nsample_100k_P_error_015> was used as the working directory.
+Started at Fri Mar  1 13:33:25 2019
+Terminated at Fri Mar  1 22:14:32 2019
+Results reported at Fri Mar  1 22:14:32 2019
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -J p38_100k_dP
+#BSUB -n 1
+#BSUB -R span[ptile=1]
+#BSUB -R rusage[mem=8]
+#BSUB -W 36:00
+#BSUB -o %J.stdout
+#BSUB -eo %J.stderr
+​
+# make sure job's submission CWD path can be accessed on the job's execution host 
+cd $LS_SUBCWD
+​
+# Activate the environment where Assaytools is installed
+source activate assaytools_af411f0
+​
+# Export current conda environment requirements
+conda list --export > requirements.txt
+​
+# Run my program
+echo "Started running Assaytools..."
+quickmodel --inputs 'inputs_single_well_dial_p38' --type 'singlet' --nsamples 100000
+echo "Done."
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   30832.96 sec.
+    Max Memory :                                 2 GB
+    Average Memory :                             0.77 GB
+    Total Requested Memory :                     8.00 GB
+    Delta Memory :                               6.00 GB
+    Max Swap :                                   -
+    Max Processes :                              5
+    Max Threads :                                141
+    Run time :                                   31269 sec.
+    Turnaround time :                            31268 sec.
+
+The output (if any) follows:
+
+Started running Assaytools...
+p38-Bosutinib-A2B2
+MAP fitting cycle 5/5
+Delta G (95% credibility interval after equilibration):
+   -13.2 [-14,-12.4] k_B T
+Delta G (mean and std after equil):
+   -13.2 +- 0.427 k_B T
+Kd (95% credibility interval after equilibration):
+   1.9 [0.8,4.3] uM
+Kd (mean and std after equil):
+   1.9 uM +- 0.9 uM
+p38-Bosutinib Isomer-C2D2
+MAP fitting cycle 5/5
+Delta G (95% credibility interval after equilibration):
+   -10.2 [-10.4,-9.8] k_B T
+Delta G (mean and std after equil):
+   -10.1 +- 0.172 k_B T
+Kd (95% credibility interval after equilibration):
+   38.1 [29.9,55.3] uM
+Kd (mean and std after equil):
+   39.2 uM +- 7.0 uM
+p38-Erlotinib-E2F2
+MAP fitting cycle 5/5
+Delta G (95% credibility interval after equilibration):
+   -10.1 [-10.7,-9.29] k_B T
+Delta G (mean and std after equil):
+   -10.1 +- 0.366 k_B T
+Kd (95% credibility interval after equilibration):
+   40.8 [21.5,92.1] uM
+Kd (mean and std after equil):
+   41.6 uM +- 17.3 uM
+p38-Gefitinib-G2H2
+MAP fitting cycle 5/5
+Delta G (95% credibility interval after equilibration):
+   -12.8 [-13.3,-12.4] k_B T
+Delta G (mean and std after equil):
+   -12.8 +- 0.247 k_B T
+Kd (95% credibility interval after equilibration):
+   2.7 [1.6,4.3] uM
+Kd (mean and std after equil):
+   2.7 uM +- 0.7 uM
+Done.
+
+
+PS:
+
+Read file <7213460.stderr> for stderr output of this job.
+
