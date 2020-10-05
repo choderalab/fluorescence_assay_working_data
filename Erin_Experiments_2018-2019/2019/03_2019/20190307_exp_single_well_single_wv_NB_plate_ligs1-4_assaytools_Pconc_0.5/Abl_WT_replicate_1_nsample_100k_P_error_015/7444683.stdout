@@ -1,0 +1,105 @@
+Sender: LSF System <lsfadmin@lt05>
+Subject: Job 7444683: <Abl_WT_100k_dP> in cluster <lila> Done
+
+Job <Abl_WT_100k_dP> was submitted from host <lilac> by user <grundye> in cluster <lila> at Thu Mar  7 16:05:55 2019
+Job was executed on host(s) <lt05>, in queue <cpuqueue>, as user <grundye> in cluster <lila> at Thu Mar  7 16:05:56 2019
+</home/grundye> was used as the home directory.
+</home/grundye/EXPERIMENTS/kinase_inhibitors_and_assaytools/20190307_single_well_dial_prot_NB_plate_ligs_1-4/Abl_WT_replicate_1_nsample_100k_P_error_015> was used as the working directory.
+Started at Thu Mar  7 16:05:56 2019
+Terminated at Fri Mar  8 01:54:14 2019
+Results reported at Fri Mar  8 01:54:14 2019
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -J Abl_WT_100k_dP
+#BSUB -n 1
+#BSUB -R span[ptile=1]
+#BSUB -R rusage[mem=8]
+#BSUB -W 36:00
+#BSUB -o %J.stdout
+#BSUB -eo %J.stderr
+
+# make sure job's submission CWD path can be accessed on the job's execution host 
+cd $LS_SUBCWD
+
+# Activate the environment where Assaytools is installed
+source activate assaytools_af411f0
+
+# Export current conda environment requirements
+conda list --export > requirements.txt
+
+# Run my program
+echo "Started running Assaytools..."
+quickmodel --inputs 'inputs_single_well_dial_Abl_WT' --type 'singlet' --nsamples 100000
+echo "Done."
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   35292.79 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     8.00 GB
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              5
+    Max Threads :                                141
+    Run time :                                   35298 sec.
+    Turnaround time :                            35299 sec.
+
+The output (if any) follows:
+
+Started running Assaytools...
+Abl_WT-Bosutinib-B1A2
+MAP fitting cycle 5/5
+Delta G (95% credibility interval after equilibration):
+   -27.2 [-34.2,-19.7] k_B T
+Delta G (mean and std after equil):
+   -27.2 +- 4.3 k_B T
+Kd (95% credibility interval after equilibration):
+   1.5 [0.0,2757.2] pM
+Kd (mean and std after equil):
+   1.6 pM +- 1059.5 pM
+Abl_WT-Bosutinib Isomer-D1C2
+MAP fitting cycle 5/5
+Delta G (95% credibility interval after equilibration):
+   -27.3 [-34.2,-20.1] k_B T
+Delta G (mean and std after equil):
+   -27.3 +- 4.24 k_B T
+Kd (95% credibility interval after equilibration):
+   1.4 [0.0,1927.0] pM
+Kd (mean and std after equil):
+   1.5 pM +- 555.7 pM
+Abl_WT-Erlotinib-F1E2
+MAP fitting cycle 5/5
+Delta G (95% credibility interval after equilibration):
+   -26.4 [-34.1,-18.8] k_B T
+Delta G (mean and std after equil):
+   -26.5 +- 4.63 k_B T
+Kd (95% credibility interval after equilibration):
+   3.4 [0.0,7035.5] pM
+Kd (mean and std after equil):
+   3.2 pM +- 2510.4 pM
+Abl_WT-Gefitinib-H1G2
+MAP fitting cycle 5/5
+Delta G (95% credibility interval after equilibration):
+   -13.9 [-14.4,-13.4] k_B T
+Delta G (mean and std after equil):
+   -13.9 +- 0.266 k_B T
+Kd (95% credibility interval after equilibration):
+   915.5 [532.7,1538.8] nM
+Kd (mean and std after equil):
+   911.9 nM +- 255.7 nM
+Done.
+
+
+PS:
+
+Read file <7444683.stderr> for stderr output of this job.
+
