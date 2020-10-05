@@ -1,0 +1,65 @@
+Sender: LSF System <lsfadmin@lt09>
+Subject: Job 11621857: <p38_Pconc_0.25> in cluster <lila> Exited
+
+Job <p38_Pconc_0.25> was submitted from host <lilac> by user <grundye> in cluster <lila> at Mon Jul 29 09:42:19 2019
+Job was executed on host(s) <lt09>, in queue <cpuqueue>, as user <grundye> in cluster <lila> at Mon Jul 29 09:42:20 2019
+</home/grundye> was used as the home directory.
+</home/grundye/EXPERIMENTS/kinase_inhibitors_and_assaytools/20190307_single_well_single_wv_NB_plate_ligs1-4_Pconc_0.25_assaytools/p38_re-do> was used as the working directory.
+Started at Mon Jul 29 09:42:20 2019
+Terminated at Mon Jul 29 19:42:23 2019
+Results reported at Mon Jul 29 19:42:23 2019
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -J p38_Pconc_0.25
+#BSUB -n 1
+#BSUB -R span[ptile=1]
+#BSUB -R rusage[mem=8]
+#BSUB -W 10:00
+#BSUB -o %J.stdout
+#BSUB -eo %J.stderr
+
+# make sure job's submission CWD path can be accessed on the job's execution host 
+cd $LS_SUBCWD
+
+# Activate the environment where Assaytools is installed
+source activate assaytools_af411f0
+
+# Export current conda environment requirements
+conda list --export > requirements.txt
+
+# Run my program
+echo "Started running Assaytools..."
+quickmodel --inputs 'inputs_single_well_dial_p38' --type 'singlet' --nsamples 100000
+echo "Done."
+
+------------------------------------------------------------
+
+TERM_RUNLIMIT: job killed after reaching LSF run time limit.
+Exited with exit code 140.
+
+Resource usage summary:
+
+    CPU time :                                   35993.00 sec.
+    Max Memory :                                 1 GB
+    Average Memory :                             0.76 GB
+    Total Requested Memory :                     8.00 GB
+    Delta Memory :                               7.00 GB
+    Max Swap :                                   17179869183 GB
+    Max Processes :                              5
+    Max Threads :                                141
+    Run time :                                   36002 sec.
+    Turnaround time :                            36004 sec.
+
+The output (if any) follows:
+
+Started running Assaytools...
+
+
+PS:
+
+Read file <11621857.stderr> for stderr output of this job.
+
