@@ -1,0 +1,106 @@
+Sender: LSF System <lsfadmin@ls09>
+Subject: Job 11224398: <Src_T338I_Perror_0.5_100k> in cluster <lila> Done
+
+Job <Src_T338I_Perror_0.5_100k> was submitted from host <lilac> by user <grundye> in cluster <lila> at Tue Jul 23 11:38:41 2019
+Job was executed on host(s) <ls09>, in queue <cpuqueue>, as user <grundye> in cluster <lila> at Tue Jul 23 11:38:43 2019
+</home/grundye> was used as the home directory.
+</home/grundye/EXPERIMENTS/kinase_inhibitors_and_assaytools/20190723_multiple_well_single_wv_NB_all/Src_T338I> was used as the working directory.
+Started at Tue Jul 23 11:38:43 2019
+Terminated at Tue Jul 23 23:20:30 2019
+Results reported at Tue Jul 23 23:20:30 2019
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -J Src_T338I_Perror_0.5_100k
+#BSUB -n 1
+#BSUB -R span[ptile=1]
+#BSUB -R rusage[mem=8]
+#BSUB -W 12:00
+#BSUB -o %J.stdout
+#BSUB -eo %J.stderr
+
+# make sure job’s submission CWD path can be accessed on the job’s execution host 
+cd $LS_SUBCWD
+
+# Activate the environment where Assaytools is installed
+source activate assaytools_af411f0
+
+# Export current conda environment requirements
+conda list --export > requirements.txt
+
+# Run my program
+echo “Started running Assaytools...”
+quickmodel --inputs inputs_multiple_well_single_wv_Src_T338I_4ligs --type singlet --nsamples 100000
+echo “Done.”
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   42089.27 sec.
+    Max Memory :                                 1 GB
+    Average Memory :                             0.82 GB
+    Total Requested Memory :                     8.00 GB
+    Delta Memory :                               7.00 GB
+    Max Swap :                                   -
+    Max Processes :                              5
+    Max Threads :                                141
+    Run time :                                   42109 sec.
+    Turnaround time :                            42109 sec.
+
+The output (if any) follows:
+
+“Started running Assaytools...”
+Skipping analysis of rows:  []
+Src_T338I-Bosutinib-AB
+MAP fitting cycle 5/5
+Delta G (95% credibility interval after equilibration):
+   -26.3 [-34.1,-18.6] k_B T
+Delta G (mean and std after equil):
+   -26.4 +- 4.69 k_B T
+Kd (95% credibility interval after equilibration):
+   3.8 [0.0,8265.1] pM
+Kd (mean and std after equil):
+   3.6 pM +- 2593.7 pM
+Src_T338I-Bosutinib Isomer-CD
+MAP fitting cycle 5/5
+Delta G (95% credibility interval after equilibration):
+   -26.4 [-34,-19.2] k_B T
+Delta G (mean and std after equil):
+   -26.5 +- 4.61 k_B T
+Kd (95% credibility interval after equilibration):
+   3.3 [0.0,4781.3] pM
+Kd (mean and std after equil):
+   3.0 pM +- 1198.0 pM
+Src_T338I-Erlotinib-EF
+MAP fitting cycle 5/5
+Delta G (95% credibility interval after equilibration):
+   -14.3 [-29.4,-12.5] k_B T
+Delta G (mean and std after equil):
+   -15.3 +- 3.71 k_B T
+Kd (95% credibility interval after equilibration):
+   614.1 [0.0,3690.7] nM
+Kd (mean and std after equil):
+   219.7 nM +- 1012.8 nM
+Src_T338I-Gefitinib-GH
+MAP fitting cycle 5/5
+Delta G (95% credibility interval after equilibration):
+   -11.9 [-12.3,-11.5] k_B T
+Delta G (mean and std after equil):
+   -11.9 +- 0.191 k_B T
+Kd (95% credibility interval after equilibration):
+   7.1 [4.6,9.8] uM
+Kd (mean and std after equil):
+   7.0 uM +- 1.3 uM
+“Done.”
+
+
+PS:
+
+Read file <11224398.stderr> for stderr output of this job.
+
