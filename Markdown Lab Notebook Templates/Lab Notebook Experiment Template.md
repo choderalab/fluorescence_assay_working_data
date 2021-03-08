@@ -1,6 +1,6 @@
 # Experiment Title
-**Date:**
-**Performed By:**
+**Date:** YYYY-MM-DD
+**Performed By:** Name
 
 **Aim:** 1-2 sentences of goal of experiment
 
