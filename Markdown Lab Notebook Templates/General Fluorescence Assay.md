@@ -4,18 +4,6 @@
 **Performed By:** Name
 
 **Aim:** 1-2 sentences of goal of experiment
-
-<details>
-  <summary>Overview</summary>
-  	* [Prepare Ligand Stock Plate](#prepare-ligand-stock-plate)
-    		+ [EVO Set Up Information](#evo-set-up-information)
-  	* [Prepare Protein Stock](#prepare-protein-stock)
-  	* [Ran Experiment with [PLATE TYPE]](#ran-experiment-with--plate-type-)
- 		   	+ [Set Up Notes](#set-up-notes)
-  	  	+ [Methods/Scripts Used](#methods-scripts-used)
-  	* [Results](#results)
-</details>
-
 ---
 
 ## Prepare Ligand Stock Plate
