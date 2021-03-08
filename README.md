@@ -11,4 +11,3 @@ It is organized by Erin Grundy's(EEG) previous work (2018-2019), then my own wor
 ### Analysis Folder should include:
 * Any/All scripts used to analyize raw data (i.e. jupyter notebook)
 * resulting figures from Analysis
-* Lab Notebook entry of discussion of analysis/future steps
