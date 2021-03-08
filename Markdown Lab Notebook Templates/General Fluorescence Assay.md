@@ -7,8 +7,13 @@
 
 <details>
   <summary>Overview</summary>
-  https://ecotrust-canada.github.io/markdown-toc/
-	use webpage later
+  	* [Prepare Ligand Stock Plate](#prepare-ligand-stock-plate)
+    		+ [EVO Set Up Information](#evo-set-up-information)
+  	* [Prepare Protein Stock](#prepare-protein-stock)
+  	* [Ran Experiment with [PLATE TYPE]](#ran-experiment-with--plate-type-)
+ 		   	+ [Set Up Notes](#set-up-notes)
+  	  	+ [Methods/Scripts Used](#methods-scripts-used)
+  	* [Results](#results)
 </details>
 
 ---
