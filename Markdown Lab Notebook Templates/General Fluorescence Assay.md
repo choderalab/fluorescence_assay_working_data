@@ -11,9 +11,7 @@
 
 ### EVO Set Up Information
 
-Created and ran EVO Script: `EAG_CreateCompoundPlate_20200831.esc`
-
-* Based on the script `EEG_CreateCompoundStockPlate_4ti0110_4rows_08aug2018.esc`
+**EVO Script:** `EAG_CreateCompoundPlate_20200831.esc`
 
 **Worktable Vial Holder**
 
