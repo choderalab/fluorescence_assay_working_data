@@ -51,7 +51,7 @@ Created and ran EVO Script: `EAG_CreateCompoundPlate_20200831.esc`
 | ------- | -------------------------- | ------------------------- |
 |         |                            |                           |
 
-## Ran Experiment with [PLATE TYPE]
+## Experiment 
 
 ### Set Up Notes
 
