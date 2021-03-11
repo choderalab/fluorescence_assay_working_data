@@ -7,15 +7,16 @@
 
 ---
 
-## Prepare Ligand Stock Plate
+## Prepare Compound Ligand Stock Plate
 
 ### EVO Set Up Information
 
 **EVO Script:** `EAG_CreateCompoundPlate_20200831.esc`
+* Based on the script `EEG_CreateCompoundStockPlate_4ti0110_4rows_08aug2018.esc`
 
 **Worktable Vial Holder**
 
-* Source Vials exposed to air for 2 min 40 seconds. After running both scripts sequentially, the compound plate was sealed with our PlateLoc (SGS13PLC14802)
+* Source Vials exposed to air for TIME. After running both scripts sequentially, the compound plate was sealed with our PlateLoc (SGS13PLC14802)
 
 | Source Vial | Location in Holder | UUID |
 | :---------: | :----------------: | :--: |
@@ -26,6 +27,8 @@
 **Destination Plate Lay Out**
 
 (Insert photo here of a 96 well plate with labeled wells)
+
+### After running both scripts sequentially, the compound plate was sealed with our PlateLoc (SGS13PLC14802)
 
 ## Prepare Protein Stock
 
