@@ -8,7 +8,7 @@
 * NOTES
   * Plate Type: Corning 2651 NBS Plate (Lot 22113019)
   * Plate Layout: 
-       [](https://github.com/choderalab/fluorescence_assay_working_data/blob/main/2020_EAG/09_September/20200916_timing_assay_corning_NBS_4_hrs/image.png_)
+       ![](https://github.com/choderalab/fluorescence_assay_working_data/blob/main/2020_EAG/09_September/20200916_timing_assay_corning_NBS_4_hrs/image.png_)
   * Equipment Used: Our Infinite, Our EVO, the new D300e, our Centrifuge
     * T8+ Cassette SN: 8474404779 LOT: US15021101 
   * Prior to the beginning experiment, I powercycled the Infinite and ran MAINT_Flush on EVO. 
