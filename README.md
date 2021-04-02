@@ -10,7 +10,7 @@ For Example:
 *  `2021_LLC_EAG` is Liza Casella and EAG continued the work
 
 ## Each experiment should contain 3 files: **(1) Lab Notebook entry, (2) Experiment Folder, and (3) Analysis Folder.**
-### Lab Notebook Entry
+### Readme.md is the Lab Notebook Entry
 * Lab Notebook should be a `.md` entry of the performed experiment (Template SOP found [here](https://github.com/egoldber/fluorescence_assay/tree/main/Markdown%20Lab%20Notebook%20Templates))
 ### Experiment Folder should include:
 * Raw Data
