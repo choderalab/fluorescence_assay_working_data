@@ -2,7 +2,12 @@
 
 This repositiory is dedicated to the experimental raw data and analysis work for the fluorescence inhibitor assay.
 
-It is organized by Erin Grundy's(EEG) previous work (2018-2019), then my own work (Erica Goldberger)(EAG). After 2021, Liza Casella and EAG continued the work and organized experiments first by the **Year** and then **Month** of when the experiment performed.
+## How this repo is organized
+### Generally speaking, each folder is organized by _who performed the work_ and the _Year_ then _Month_ the experiment was performed. 
+For Example:
+* `2018-2019_EEG` is Erin Grundy's(EEG) work from 2018-2019
+*  `2020_EAG` is Erica Goldberger's (EAG) work in 2020
+*  `2021_LLC_EAG` is Liza Casella and EAG continued the work
 
 ## Each experiment should contain 3 files: **(1) Lab Notebook entry, (2) Experiment Folder, and (3) Analysis Folder.**
 ### Lab Notebook Entry
