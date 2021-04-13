@@ -1,14 +1,12 @@
 # Multiple Well Assay Timing Test with Corning 3651 Plate
 
 Date: Apr 7, 2021
-Entry Type: Experiment
-Tags: Erica Goldberger, Liza Casella
+Erica Goldberger, Liza Casella
 
 **Aim:** To visually show that protein is binding to the plate. We will measure the same complexes: Abl WT & Src WT against Bos & Erl ligands using DMSO backfill.
 
 - EXP previously completed 2020/09/02 but the data was in `.xlsx` format and couldnot be analyzied
 - Important to note that the EXP has been **extended to 4 hrs.** (The length of time it takes to perform a singlewell assay)
-- Overview
 
 ---
 
