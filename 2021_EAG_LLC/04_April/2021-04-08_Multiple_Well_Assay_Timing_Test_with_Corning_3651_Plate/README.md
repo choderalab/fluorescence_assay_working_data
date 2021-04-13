@@ -17,11 +17,11 @@ Erica Goldberger, Liza Casella
 
 - Ran EVO Script: `EAG_CreateCompoundPlate_20200831.esc`
 
-    ![Vial Holder](/Users/goldbee2/Documents/Local GitHub Repositories/Fluorscence_Assay/fluorescence_assay/2021_EAG_LLC/04_April/2021-04-08_Multiple_Well_Assay_Timing_Test_with_Corning_3651_Plate/Photos for README/Vial_Holder.jpg)
+    ![Vial Holder](/Users/goldbee2/Documents/Local GitHub Repositories/Fluorscence_Assay/fluorescence_assay/2021_EAG_LLC/04_April/2021-04-08_Multiple_Well_Assay_Timing_Test_with_Corning_3651_Plate/Vial_Holder.jpg)
 
 - **PLATE LAYOUT**
 
-    - ![Compound Stock Plate Layout](/Users/goldbee2/Documents/Local GitHub Repositories/Fluorscence_Assay/fluorescence_assay/2021_EAG_LLC/04_April/2021-04-08_Multiple_Well_Assay_Timing_Test_with_Corning_3651_Plate/compound_stock_plate_2021-04-06-8329942.jpg)
+    - ![Compound Stock Plate Layout](/Users/goldbee2/Documents/Local GitHub Repositories/Fluorscence_Assay/fluorescence_assay/2021_EAG_LLC/04_April/2021-04-08_Multiple_Well_Assay_Timing_Test_with_Corning_3651_Plate/compound_stock_plate_2021-04-06.jpg)
     - Source Vials exposed to air for 1 min 24 seconds. (Total time vial has been exposed to air: 2 min 3 sec)
 
 The compound plate was then sealed with our Agilent PlateLoc (SN#SGS13PLC14802)
@@ -37,7 +37,7 @@ Since the D300e is not entirely integrated into the EVO, I cannot “set it and 
 - **Plate Type:** Corning 2651 NBS Plate
 - **Plate Layout:**
 
-    ![](/Users/goldbee2/Documents/Local GitHub Repositories/Fluorscence_Assay/fluorescence_assay/2021_EAG_LLC/04_April/2021-04-08_Multiple_Well_Assay_Timing_Test_with_Corning_3651_Plate/Photos for README/Plate Layout_EXP.png)
+    ![](/Users/goldbee2/Documents/Local GitHub Repositories/Fluorscence_Assay/fluorescence_assay/2021_EAG_LLC/04_April/2021-04-08_Multiple_Well_Assay_Timing_Test_with_Corning_3651_Plate/Plate Layout_EXP.png)
 
 - **Automation Equipment Used:** Our Infinite, Our EVO, our D300e, our centrifuge
 - Prior to the beginning experiment, I powercycled the Infinite.
@@ -55,14 +55,14 @@ Since the D300e is not entirely integrated into the EVO, I cannot “set it and 
             - Shake for 2 minutes
     - Worktable Layout:
 
-        ![](/Users/goldbee2/Documents/Local GitHub Repositories/Fluorscence_Assay/fluorescence_assay/2021_EAG_LLC/04_April/2021-04-08_Multiple_Well_Assay_Timing_Test_with_Corning_3651_Plate/Photos for README/EVO_Worktable.png)
+        ![](/Users/goldbee2/Documents/Local GitHub Repositories/Fluorscence_Assay/fluorescence_assay/2021_EAG_LLC/04_April/2021-04-08_Multiple_Well_Assay_Timing_Test_with_Corning_3651_Plate/EVO_Worktable.png)
 
 2. Run D300e script to pipette serial dilution of Inhibitor/DMSO onto Plate 
     - Script: `EEG_timing_test_single_wv_full_plate_2019-04-11_wells_3to_5 2019-07-23 1300.DATA.xml`
         - Aspirated from 6-8 on Chip
         - ***Ligand Titration Series (Ligand concentration in each well)***
 
-            ![](/Users/goldbee2/Documents/Local GitHub Repositories/Fluorscence_Assay/fluorescence_assay/2021_EAG_LLC/04_April/2021-04-08_Multiple_Well_Assay_Timing_Test_with_Corning_3651_Plate/Photos for README/D300e_Well_info.png)
+            ![](/Users/goldbee2/Documents/Local GitHub Repositories/Fluorscence_Assay/fluorescence_assay/2021_EAG_LLC/04_April/2021-04-08_Multiple_Well_Assay_Timing_Test_with_Corning_3651_Plate/D300e_Well_info.png)
 
 3. Spin Plate with HiG4 Centrifuge for 30 seconds; 500 G
 4. Place Plate into Infinite and Run Script
@@ -88,13 +88,14 @@ Infinite Output File: [2021-04-08 13-08-30_plate_1.xml](REPEAT%20Multiple%20Well
 
 **Fluorescence by well:**
 
-* ![]()
-
-
+* ![](/Users/goldbee2/Documents/Local GitHub Repositories/Fluorscence_Assay/fluorescence_assay/2021_EAG_LLC/04_April/2021-04-08_Multiple_Well_Assay_Timing_Test_with_Corning_3651_Plate/Fluorescence by well-Abl_Bos.png)
+* ![](/Users/goldbee2/Documents/Local GitHub Repositories/Fluorscence_Assay/fluorescence_assay/2021_EAG_LLC/04_April/2021-04-08_Multiple_Well_Assay_Timing_Test_with_Corning_3651_Plate/Fluorescence by well-Abl_Erl.png)
+* ![](/Users/goldbee2/Documents/Local GitHub Repositories/Fluorscence_Assay/fluorescence_assay/2021_EAG_LLC/04_April/2021-04-08_Multiple_Well_Assay_Timing_Test_with_Corning_3651_Plate/Fluorescence by well-Src_Bos.png)
+* ![](/Users/goldbee2/Documents/Local GitHub Repositories/Fluorscence_Assay/fluorescence_assay/2021_EAG_LLC/04_April/2021-04-08_Multiple_Well_Assay_Timing_Test_with_Corning_3651_Plate/Fluorescence by well-Src_Erl.png)
 
 **Fluorescence intensity by concentration** 
 
-
+![]()
 
 **Fluorescence intensity by time**
 
